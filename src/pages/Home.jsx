@@ -31,7 +31,6 @@ export const Home = () => {
       })
     }
 
-    console.log(berryList)
     return berryList
   }
 
@@ -78,7 +77,6 @@ export const Home = () => {
         } else if (product.name === name && product.quantity === 1) {
           setZeroBerry(product.name)
           setShowModal(true)
-          console.log(zeroBerry)
           return { ...product, quantity: product.quantity - 1 }
         }
         return product
@@ -94,7 +92,6 @@ export const Home = () => {
 
   const handleAddBerry = (berry, quantityInput) => {
     const existingBerry = products.find((product) => {
-      console.log(product)
       return product.name === berry.name
     })
 
@@ -129,7 +126,6 @@ export const Home = () => {
   }, [])
 
   useEffect(() => {
-    console.log(berryTypes)
     const getBerries = async () => {
       const berries = await getBerrySelection(5)
       setProducts(berries)
