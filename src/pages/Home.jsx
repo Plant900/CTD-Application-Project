@@ -147,10 +147,12 @@ export const Home = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Berry List</Link>
+              <Link to="/CTD-Application-Project/">Berry List</Link>
             </li>
             <li>
-              <Link to="/browse">Browse all berries</Link>
+              <Link to="/CTD-Application-Project/browse">
+                Browse all berries
+              </Link>
             </li>
             <li className={styles.tooltip}>
               <div className={styles.tooltipText}>
@@ -168,7 +170,7 @@ export const Home = () => {
                 give them a look too if you have time!
                 <br />
                 <br />I appreciate the opportunity and would love to join the
-                CTD team.
+                CTD team as a software development apprentice.
               </div>
               <span>About</span>
             </li>
@@ -183,7 +185,7 @@ export const Home = () => {
       )}
       <Routes>
         <Route
-          path="/"
+          path="/CTD-Application-Project/"
           element={
             <ProductList
               products={products}
@@ -194,7 +196,7 @@ export const Home = () => {
           }
         />
         <Route
-          path="/browse"
+          path="/CTD-Application-Project/browse"
           element={
             <Browse berryTypes={berryTypes} handleAddBerry={handleAddBerry} />
           }
