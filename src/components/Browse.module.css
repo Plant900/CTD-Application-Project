@@ -1,0 +1,70 @@
+/* Browse.module.css */
+
+.browse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 20px 100px 0 100px;
+  margin-left: 100px;
+  gap: 20px;
+}
+
+.browse-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 200px;
+}
+
+.browse-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.browse-item h2 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.browse-item input[type='number'] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  width: calc(100% - 110px);
+  text-align: center;
+  margin-right: 5px;
+}
+
+.browse-item button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.browse-item button:hover {
+  background-color: #0062cc;
+}
+
+.browse-item .open {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.browse-item .open button:last-of-type {
+  margin-right: 0;
+}

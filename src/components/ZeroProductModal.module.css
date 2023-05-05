@@ -1,0 +1,75 @@
+/* ZeroProductModal.module.css */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.modal h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.modal input[type='email'],
+.modal textarea {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.modal input[type='submit'] {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b8e2c8;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal input[type='submit']:hover {
+  background-color: #8cc298;
+}
+
+.modal button {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  margin-left: auto;
+  display: block;
+}
+
+.modal button:hover {
+  background-color: #0062cc;
+}

@@ -1,0 +1,15 @@
+/* ProductList.module.css */
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 40px 100px;
+  gap: 5px;
+}
+
+.product {
+  width: calc(33.33% - 20px);
+  margin: 0 0 30px 0;
+  padding: 0 10px;
+}
