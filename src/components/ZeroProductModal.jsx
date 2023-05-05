@@ -27,8 +27,7 @@ export const ZeroProductModal = ({ onClose, zeroBerry }) => {
 
   return (
     <div className={styles.modal}>
-      <h2>Product has depleted to 0</h2>
-      <p>Please restock this item.</p>
+      <h2>{zeroBerry} stock has depleted to 0</h2>
       <form ref={form} onSubmit={sendEmail}>
         <label>Send to: </label>
         <input type="email" name="destination_email" />

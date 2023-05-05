@@ -152,21 +152,17 @@ export const Home = () => {
             </li>
             <li className={styles.tooltip}>
               <div className={styles.tooltipText}>
-                Thanks for checking out my product tracking app! I believe this
-                application meets all the requirements for the React Rubric for
-                the CTD labs apprenticeship assignment. This project utilizes
-                PokeAPI, which has information about items from the Pokemon
-                video games. It also uses the EmailJS service, which allows
-                emails to be sent when a berry's quantity reaches 0.
+                Thanks for checking out my product tracking app! This project
+                should meet all the requirements for the React Rubric on the CTD
+                labs apprenticeship assignment. It utilizes PokeAPI to get info
+                about the berries, and the EmailJS service, which allows emails
+                to be sent when a berry's quantity reaches 0.
                 <br />
                 <br />
                 In the other pinned projects on my Github page, I utilize
                 Express for building APIs, Mongoose for communicating with
                 MongoDB, Redux toolkit for state management, and more. Please
                 give them a look too if you have time!
-                <br />
-                <br />I appreciate the opportunity and would love to join the
-                CTD team as a software development apprentice.
               </div>
               <span>About</span>
             </li>
